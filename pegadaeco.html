@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/FavIcon.png">
+    <title>EcoFeet</title>
+</head>
+<body>
+    <h2>Vendo sua pegada ecologica</h2>
+    <p>por favor me fale quantos quilos de plástico você recicla no ano EM NUMEROS!!!</p>
+    <input id="numb">
+    <button type="button" onclick="myFunction()">Submite</button>
+    <p id = "demo"></p>
+    <p id = "EcoPontos"></p>
+    <script>
+        function myFunction(){
+            let x = parseFloat(document.getElementById("numb").value);
+            let text;
+            if(isNaN(x) || x < 64){
+            text = `Você não recilca ${64 - x} quilos de plástico`;
+        } else {
+            text = "Você recicla todo o seu plástico";
+        }
+        document.getElementById("demo").innerHTML = text;
+        document.getElementById("EcoPontos").innerHTML = `Você ganhou ${x*10} ecopontos`
+    }
+    </script>
+</body>
+</html>

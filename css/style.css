@@ -1,0 +1,69 @@
+header{
+    width: 100% + 10px;
+    height: 120px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    background-image: linear-gradient(rgba(132, 189, 145,1) 75%, rgba(132, 189, 145,0));
+    text-align: center;
+    text-decoration: none;
+    font-size: 75px;
+    font-family: "FRUIT BANANA";
+    color: #4e9052;
+    
+    a:Link, a:visited{
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+        background-color: #32b17e;
+        border-radius: 10px 10px 10px 10px;
+        padding: 0px 7px;    
+    }
+    a:hover, a:active{
+        background-color: green;
+    }
+
+    .bomg{
+    display: inline-block;
+}
+}
+#PEtitle{
+    text-align: center;
+}
+#PEparagraph{
+    text-align: center;
+    text-align: justify;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-zoom {
+  
+    width:170px;
+    margin:auto;
+    display:block;  
+    color:#fff;
+    font-family: 'open_sansregular';
+    font-size:19.2px;
+    text-align:center;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    border-radius:6px;
+    background-color:green;
+    transition: transform 50ms ease-out, background-position 80ms ease-out, box-shadow 500ms linear;
+    background-size:contain;
+    background-position: -250px center;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+  .btn-zoom:hover {
+    transform: scale(1.1);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  .btn-zoom:active {
+    transform: scale(1);
+    background-position: 500px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
