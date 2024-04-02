@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranking EcoFeet</title>
-    <link rel="stylesheet" href="ranking.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="ranking">
         <h1>EcoFeet</h1>
-        <ol>
-            <li><span class="player">Flávio</span>  <span class="score">10%</span></li>
-            <li><span class="player">Guilherme</span>  <span class="score">90%</span></li>
-            <li><span class="player">Silas Nascimento Sousa Santos</span>  <span class="score">80%</span></li>
-            <li><span class="player">Kaiki</span>  <span class="score">97%</span></li>
-            <li><span class="player">Guilherme.A</span>  <span class="score">87%</span></li>
-            <li><span class="player">Walesca</span>  <span class="score">89%</span></li>
-            <li><span class="player">Rodrigo</span>  <span class="score">9%</span></li>
+        <button onclick="sortRanking()">Classificar</button>
+        <input type="text" id="newPlayer" placeholder="Novo jogador">
+        <input type="number" id="newScore" placeholder="Pontuação">
+        <button onclick="addPlayer()">Adicionar jogador</button>
+        <ol id="playerList">
+            <!-- Jogadores e pontuações serão inseridos aqui dinamicamente -->
         </ol>
+        <input type="text" id="removePlayer" placeholder="remover jogador">
+        <button onclick="removePlayer()">Remover</button>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
